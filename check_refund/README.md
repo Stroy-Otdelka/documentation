@@ -61,7 +61,7 @@
     --entry-point entrypoint \
     --region europe-west1 \
     --source . \
-    --set-env-vars "API_KEYS={\"amodecor\":{\"wb\":\"your_token\"}},AUTH_URL=https://europe-west1-yellduck.cloudfunctions.net/get-credentials,SHEET_ID=1gKXFhFt_BoHshZHenkmTk9PPVRCNc6p7mEEq0sMh9TY,SHEET_SECRET=SHEET_SERVICE_INFO" \
+    --set-env-vars "API_KEYS={...},AUTH_URL=...,SHEET_ID=..." \
     --allow-unauthenticated
    ```
    
