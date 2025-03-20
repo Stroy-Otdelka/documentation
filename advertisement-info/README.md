@@ -81,7 +81,7 @@
     --entry-point run_adv_info \
     --region europe-west1 \
     --source . \
-    --set-env-vars PROJECT_ID=$(gcloud config get-value project),API_KEYS='{"amodecor":{"ozon":{"client_id":"your_client_id","api_key":"your_api_key","client_adv_id":"your_adv_client_id","client_adv_secret":"your_adv_secret"}},"stroy_otdelka":{"ozon":{"client_id":"your_client_id","api_key":"your_api_key","client_adv_id":"your_adv_client_id","client_adv_secret":"your_adv_secret"}},"orion":{"ozon":{"client_id":"your_client_id","api_key":"your_api_key","client_adv_id":"your_adv_client_id","client_adv_secret":"your_adv_secret"}}}' \
+    --set-env-vars PROJECT_ID=$(gcloud config get-value project),API_KEYS='{...}' \
     --memory 1G \
     --cpu 1 \
     --min-instances 0 \
