@@ -90,7 +90,7 @@
     --entry-point check_tags_stock \
     --region europe-west1 \
     --source . \
-    --set-env-vars PROJECT_ID=$(gcloud config get-value project),SHEETS_ID=1HtcT32J1bkFVqHBnp-yTOWG6R4Zu_95MhhMR2wzsq9g \
+    --set-env-vars PROJECT_ID=$(gcloud config get-value project),SHEETS_ID=... \
     --vpc-connector product-card \
     --timeout 240
    ```
@@ -99,8 +99,6 @@
 Google Sheets:
 - Лист "Лист1": Содержит данные о товарах с тегами (родители в столбце C, дочерние в D).
 - Лист "LISTING": Содержит пары артикулов Wildberries (столбец A) и Ozon (столбец B).
-
-API: Используется эндпоинт https://europe-west1-yellduck.cloudfunctions.net/get-stocks для получения остатков.
 
 Redis: Кэширует проверенные SKU с TTL 24 часа для предотвращения повторных запросов.
 
